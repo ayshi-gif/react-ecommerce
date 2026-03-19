@@ -13,7 +13,7 @@ const ProductList = () => {
     const [sortOption, setSortOption] = useState("name");
 
     useEffect(() => {
-        fetch("/products.json")
+        fetch("https://react-ecommerce-backend-rohz.onrender.com/api/products")
             .then((res) => res.json())
             .then((data) => {
                 const formatted = data.map(item => ({

@@ -4,7 +4,7 @@ const Sidebar = () => {
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {
-        fetch("/products.json")
+        fetch("https://react-ecommerce-backend-rohz.onrender.com/api/products")
             .then((res) => res.json())
             .then((data) => {
                 const manualCategories = [
