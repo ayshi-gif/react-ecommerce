@@ -10,7 +10,7 @@ const products = [
         name: "Running Shoes",
 
         // Product image shown at the top
-        image: "http://via.placeholder.com/300x200",
+        image: "https://via.placeholder.com/300",
 
         // Current discounted price
         price: 1200,
@@ -31,7 +31,7 @@ const products = [
     {
         id: 2,
         name: "Backpack",
-        image: "http://via.placeholder.com/300x200",
+        image: "https://via.placeholder.com/300",
         price: 900,
         oldPrice: 1100,
         rating: 5,
@@ -42,7 +42,7 @@ const products = [
     {
         id: 3,
         name: "Smart Watch",
-        image: "http://via.placeholder.com/300x200",
+        image: "https://via.placeholder.com/300",
         price: 2500,
         oldPrice: 3000,
         rating: 3,
@@ -53,7 +53,7 @@ const products = [
     {
         id: 4,
         name: "Wireless Headphones",
-        image: "http://via.placeholder.com/300x200",
+        image: "https://via.placeholder.com/300",
         price: 1800,
         oldPrice: 2200,
         rating: 4,
@@ -64,7 +64,7 @@ const products = [
     {
         id: 5,
         name: "Laptop Bag",
-        image: "http://via.placeholder.com/300x200",
+        image: "https://via.placeholder.com/300",
         price: 1400,
         oldPrice: 1700,
         rating: 5,

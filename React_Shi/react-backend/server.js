@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 
 // Import product data from the data folder
-const products = require("./data/products");
+const products = require("./data/products.json");
 
 // Create an Express application
 const app = express();
@@ -38,7 +38,9 @@ app.get("/api/categories", (req, res) => {
     res.json(categories);
 });
 
-// Start server on port 5000
-app.listen(5000, () => {
-    console.log("Backend server running at http://localhost:5000");
+// Use the port Render gives us, OR use 5000 if we are running locally
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+    console.log(`Backend server running on port ${PORT}`);
 });
