@@ -18,12 +18,12 @@ const ProductList = () => {
             .then((data) => {
                 const formatted = data.map(item => ({
                     id: item.id,
-                    name: item.title,
+                    name: item.name,
                     category: item.category || "General", // Ensure your JSON has categories
                     oldPrice: (item.price * 1.25).toFixed(2),
                     price: item.price,
                     discount: 20,
-                    rating: Math.round(item.rating.rate),
+                    rating: item.rating,
                     image: item.image
                 }));
                 setProducts(formatted);
